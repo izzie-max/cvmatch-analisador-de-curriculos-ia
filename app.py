@@ -29,7 +29,8 @@ def ler_word(arquivo):
     return texto_completo
 
 #---configuração da API de IA
-CHAVE_API ="AIzaSyCyFkfYIK_9cra_NoDPKcnAHXie84ZwFVA"
+import os
+CHAVE_API = str.secrets["GEMINI_API_KEY"]
 
 # Inicializa o cliente do Gemini
 cliente_ia = genai.Client(api_key=CHAVE_API)
