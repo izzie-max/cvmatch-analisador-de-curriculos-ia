@@ -39,6 +39,7 @@ cliente_ia = genai.Client(
     api_key=CHAVE_API,
     # Essa configuração limpa os rastros do servidor do Streamlit que fazem o Google bloquear o acesso internacional
     http_options={'headers': {'X-Goog-User-Project': ''}}
+)
 
 # Inicializa o cliente do Gemini
 cliente_ia = genai.Client(api_key=CHAVE_API)
