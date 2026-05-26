@@ -1,5 +1,6 @@
 import streamlit as str
 import PyPDF2
+import os
 from docx import Document
 from google import genai #importando a biblioteca do Gemini para usar a API de IA
 
@@ -29,7 +30,6 @@ def ler_word(arquivo):
     return texto_completo
 
 #---configuração da API de IA
-import os
 CHAVE_API = str.secrets["GEMINI_API_KEY"]
 
 # Inicializa o cliente do Gemini
