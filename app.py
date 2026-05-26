@@ -30,20 +30,8 @@ def ler_word(arquivo):
     return texto_completo
 
 #---configuração da API de IA
-CHAVE_API = str.secrets["GEMINI_API_KEY"]
-
-# Inicializamos o cliente configurando os cabeçalhos de requisição de forma limpa
-from google.genai import types
-
-cliente_ia = genai.Client(
-    api_key=CHAVE_API,
-    # Essa configuração limpa os rastros do servidor do Streamlit que fazem o Google bloquear o acesso internacional
-    http_options={'headers': {'X-Goog-User-Project': ''}}
-)
-
-# Inicializa o cliente do Gemini
-cliente_ia = genai.Client(api_key=CHAVE_API)
-
+# O cliente do Gemini vai pegar a chave 'GEMINI_API_KEY' automaticamente dos Secrets da nuvem!
+cliente_ia = genai.Client()
 
 # --- PARTE VISUAL (INTERFACE) ---
 
