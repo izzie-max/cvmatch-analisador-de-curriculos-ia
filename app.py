@@ -3,11 +3,11 @@ import PyPDF2
 from docx import Document
 from google import genai #importando a biblioteca do Gemini para usar a API de IA
 
-# 🔥 ESSA PRECISA SER A PRIMEIRA LINHA DO STREAMLIT NO CÓDIGO:
+# PRIMEIRA LINHA DO STREAMLIT NO CÓDIGO:
 str.set_page_config(
     page_title="CvMatch", # O texto que vai aparecer na aba
-    page_icon="🎯",                          # O ícone da aba (pode usar qualquer emoji!)
-    layout="centered"                        # Mantém o design do site centralizado e bonito
+    page_icon="🎯",                          
+    layout="centered"                        
 )
 
 # Função para ler o PDF do Currículo
@@ -29,7 +29,6 @@ def ler_word(arquivo):
     return texto_completo
 
 #---configuração da API de IA
-# TODO: Cole aqui sua chave de API gerada no Google AI entre as aspas abaixo:
 CHAVE_API ="AIzaSyCyFkfYIK_9cra_NoDPKcnAHXie84ZwFVA"
 
 # Inicializa o cliente do Gemini
