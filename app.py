@@ -43,7 +43,7 @@ str.divider()
 vaga_texto = str.text_area("1. Cole aqui a descrição da vaga:", height=150)
 
 curriculo_file = str.file_uploader("2. Envie o currículo do candidato (Modelo PDF)", type=["pdf"])
-entrevista_file = str.file_uploader("3. Envie a transcrição da entrevista (Modelo Word)", type=["docx"])
+entrevista_file = str.file_uploader("3. Envie a transcrição da entrevista ou suas anotações sobre o perfil (Modelo Word)", type=["docx"])
 
 str.divider()
 
