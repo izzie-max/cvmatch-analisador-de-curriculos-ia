@@ -178,7 +178,6 @@ elif opcao_tela == "🏆 Ranking":
             
             # Mostra na tela para testar (DENTRO DO ELSE DO BOTÃO)
             str.success(f"Sucesso! Conseguimos ler os {total_cvs} currículos!")
-            str.text_area("Texto compilado dos currículos (Apenas para testes):", value=dados_candidatos_prompts, height=200)
 
             # 1. Criamos a instrução especial para o Gemini comparar o lote
             comando_ranking = f"""
