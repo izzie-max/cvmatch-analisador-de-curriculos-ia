@@ -1,5 +1,5 @@
-streamlit==1.38.0
-starlette==0.38.2
+streamlit
+starlette<0.38.0
 PyPDF2
 python-docx
 google-genai
